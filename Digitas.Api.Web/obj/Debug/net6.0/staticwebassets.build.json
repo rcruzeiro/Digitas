@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QEknitwtfvchybTxt/8mMOn4dMANRqA6iiKyEa7jUDQ=",
+  "Source": "Digitas.Api.Web",
+  "BasePath": "_content/Digitas.Api.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

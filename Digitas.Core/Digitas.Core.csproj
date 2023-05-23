@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="Shared\" />
+	  <None Remove="MarketData\" />
+	  <None Remove="MarketData\Service\" />
+	  <None Remove="MarketData\Service\Abstractions\" />
+	  <None Remove="MarketData\Service\Requests\" />
+	  <None Remove="MarketData\Service\Responses\" />
+	  <None Remove="MarketData\Service\Responses\Abstractions\" />
+	  <None Remove="MarketData\Service\Responses\Poliices\" />
+	  <None Remove="MarketData\Service\Requests\Abstractions\" />
+	  <None Remove="MarketData\Service\Requests\Channels\" />
+	  <None Remove="Data\" />
+	  <None Remove="Data\Models\" />
+	  <None Remove="Data\Models\Abstractions\" />
+	  <None Remove="Data\Abstractions\" />
+	  <None Remove="Features\" />
+	  <None Remove="Features\Books\" />
+	  <None Remove="Data\MongoDb\" />
+	  <None Remove="Shared\Mediator\" />
+	  <None Remove="Shared\Mediator\Abstractions\" />
+	  <None Remove="MarketData\Abstractions\" />
+	  <None Remove="Features\Books\UseCases\" />
+	  <None Remove="Features\Books\UseCases\Inputs\" />
+	  <None Remove="Features\Books\UseCases\Outputs\" />
+	  <None Remove="Data\MongoDb\Abstractions\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Shared\" />
+	  <Folder Include="MarketData\" />
+	  <Folder Include="MarketData\Service\" />
+	  <Folder Include="MarketData\Service\Abstractions\" />
+	  <Folder Include="MarketData\Service\Requests\" />
+	  <Folder Include="MarketData\Service\Responses\" />
+	  <Folder Include="MarketData\Service\Responses\Abstractions\" />
+	  <Folder Include="MarketData\Service\Requests\Abstractions\" />
+	  <Folder Include="MarketData\Service\Requests\Channels\" />
+	  <Folder Include="Data\" />
+	  <Folder Include="Data\Models\" />
+	  <Folder Include="Data\Models\Abstractions\" />
+	  <Folder Include="Data\Abstractions\" />
+	  <Folder Include="Features\" />
+	  <Folder Include="Features\Books\" />
+	  <Folder Include="Data\MongoDb\" />
+	  <Folder Include="Shared\Mediator\" />
+	  <Folder Include="Shared\Mediator\Abstractions\" />
+	  <Folder Include="MarketData\Abstractions\" />
+	  <Folder Include="Features\Books\UseCases\" />
+	  <Folder Include="Features\Books\UseCases\Inputs\" />
+	  <Folder Include="Features\Books\UseCases\Outputs\" />
+	  <Folder Include="Data\MongoDb\Abstractions\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+	  <PackageReference Include="Websocket.Client" Version="4.6.1" />
+	  <PackageReference Include="MongoDB.Driver" Version="2.19.1" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+	  <PackageReference Include="LanguageExt.Core" Version="4.4.3" />
+	</ItemGroup>
+</Project>

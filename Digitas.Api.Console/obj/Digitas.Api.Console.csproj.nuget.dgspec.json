@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/rcruzeiro/Sites/Digitas/Digitas.Api.Console/Digitas.Api.Console.csproj": {}
+  },
+  "projects": {
+    "/Users/rcruzeiro/Sites/Digitas/Digitas.Api.Console/Digitas.Api.Console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rcruzeiro/Sites/Digitas/Digitas.Api.Console/Digitas.Api.Console.csproj",
+        "projectName": "Digitas.Api.Console",
+        "projectPath": "/Users/rcruzeiro/Sites/Digitas/Digitas.Api.Console/Digitas.Api.Console.csproj",
+        "packagesPath": "/Users/rcruzeiro/.nuget/packages/",
+        "outputPath": "/Users/rcruzeiro/Sites/Digitas/Digitas.Api.Console/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rcruzeiro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/rcruzeiro/Sites/Digitas/Digitas.Core/Digitas.Core.csproj": {
+                "projectPath": "/Users/rcruzeiro/Sites/Digitas/Digitas.Core/Digitas.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rcruzeiro/Sites/Digitas/Digitas.Core/Digitas.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rcruzeiro/Sites/Digitas/Digitas.Core/Digitas.Core.csproj",
+        "projectName": "Digitas.Core",
+        "projectPath": "/Users/rcruzeiro/Sites/Digitas/Digitas.Core/Digitas.Core.csproj",
+        "packagesPath": "/Users/rcruzeiro/.nuget/packages/",
+        "outputPath": "/Users/rcruzeiro/Sites/Digitas/Digitas.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rcruzeiro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "LanguageExt.Core": {
+              "target": "Package",
+              "version": "[4.4.3, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.19.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Websocket.Client": {
+              "target": "Package",
+              "version": "[4.6.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

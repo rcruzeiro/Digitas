@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/Digitas.Api.Web.props" />
+</Project>

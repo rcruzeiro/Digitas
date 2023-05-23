@@ -1,0 +1,5 @@
+﻿---
+name: '$(Year:yyyy).$(Month).$(DayOfMonth).$(Rev:r).$(Build.BuildId)'
+
+trigger:
+  - main

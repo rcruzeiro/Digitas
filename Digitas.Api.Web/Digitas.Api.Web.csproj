@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+		<UserSecretsId>9c7b3f05-4a8f-4fba-98c9-4e2a7a88cf63</UserSecretsId>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="6.0.5" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Digitas.Core\Digitas.Core.csproj">
+			<GlobalPropertiesToRemove>
+			</GlobalPropertiesToRemove>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Extensions\" />
+	  <None Remove="Services\" />
+	  <None Remove="Middlewares\" />
+	  <None Remove="Controllers\" />
+	  <None Remove="Controllers\V1\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Extensions\" />
+	  <Folder Include="Services\" />
+	  <Folder Include="Middlewares\" />
+	  <Folder Include="Controllers\" />
+	  <Folder Include="Controllers\V1\" />
+	</ItemGroup>
+</Project>
