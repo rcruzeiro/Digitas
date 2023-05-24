@@ -21,9 +21,8 @@ public sealed class UseCaseMediator : IUseCaseMediator
 
             return useCase;
         }
-        catch (Exception ex)
+        catch
         {
-            //TODO: error treatment
             throw;
         }
     }

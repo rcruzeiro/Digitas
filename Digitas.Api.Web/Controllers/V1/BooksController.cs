@@ -83,7 +83,7 @@ public sealed class BooksController : Controller
         var input = new CalculateBestPriceInput(currency, side, quantity);
         var result = await _mediator.Using<BooksUseCases>().HandleAsync(input, cancellationToken);
 
-        return result.Match<IResult>(
+        return result.Match(
             succ => Results.Ok(succ),
             fail => Results.BadRequest(fail));
     }

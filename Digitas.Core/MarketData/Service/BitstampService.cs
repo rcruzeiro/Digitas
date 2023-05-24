@@ -30,9 +30,8 @@ public sealed class BitstampService : IBitstampService
 
             _socketClient.Send(serialized);
         }
-        catch (Exception ex)
+        catch
         {
-            //TODO: error treatment
             throw;
         }
     }
@@ -48,9 +47,8 @@ public sealed class BitstampService : IBitstampService
                 HandleMessageObject(message);
             }
         }
-        catch (Exception ex)
+        catch
         {
-            //TODO: error treatment
             throw;
         }
     }

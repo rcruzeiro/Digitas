@@ -23,6 +23,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.dockerignore = .dockerignore
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7B0576B5-CB1B-492D-9545-1CA1C637D793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digitas.UnitTests", "..\Digitas.UnitTests\Digitas.UnitTests.csproj", "{7B2A4E78-1F65-4CBE-B1B5-8F830517AC61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,10 @@ Global
 		{FD99FE6F-5BD6-4337-875C-42F93A80A898}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD99FE6F-5BD6-4337-875C-42F93A80A898}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD99FE6F-5BD6-4337-875C-42F93A80A898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B2A4E78-1F65-4CBE-B1B5-8F830517AC61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B2A4E78-1F65-4CBE-B1B5-8F830517AC61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B2A4E78-1F65-4CBE-B1B5-8F830517AC61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B2A4E78-1F65-4CBE-B1B5-8F830517AC61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +63,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D9E74536-DAE3-414C-ADB6-E5C3FA079A79} = {E63759F7-D5C6-41AB-BEE8-CEC259D1A244}
 		{32E8CF24-D0BC-4051-91A1-F3AEE618F96D} = {E63759F7-D5C6-41AB-BEE8-CEC259D1A244}
+		{7B2A4E78-1F65-4CBE-B1B5-8F830517AC61} = {7B0576B5-CB1B-492D-9545-1CA1C637D793}
 	EndGlobalSection
 EndGlobal

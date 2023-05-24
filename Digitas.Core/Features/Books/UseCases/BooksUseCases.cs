@@ -5,6 +5,7 @@ using Digitas.Core.Features.Books.UseCases.Outputs;
 using Digitas.Core.Shared;
 using Digitas.Core.Shared.Mediator;
 using LanguageExt.Common;
+using Microsoft.Extensions.Logging;
 
 namespace Digitas.Core.Features.Books.UseCases;
 
@@ -12,16 +13,25 @@ public sealed class BooksUseCases : IUseCase,
     IUseCaseHandler<CreateOrderBookInput>,
     IUseCaseHandler<CalculateBestPriceInput, CalculateBestPriceOutput>
 {
+    private readonly ILogger<BooksUseCases> _logger;
     private readonly IMongoDbRepository _repository;
 
-    public BooksUseCases(IMongoDbRepository repository)
+    public BooksUseCases(ILogger<BooksUseCases> logger, IMongoDbRepository repository)
     {
+        _logger = logger;
         _repository = repository;
     }
 
     public async Task HandleAsync(CreateOrderBookInput input, CancellationToken cancellationToken = default)
     {
-        if (input is null) return;
+        if (input is null)
+        {
+            _logger.LogWarning("Invalid input to handle.");
+
+            return;
+        }
+
+        _logger.LogInformation("Handling OrderBook creation..");
 
         // create order book into database
         await _repository.CreateAsync(input.Book, cancellationToken);
@@ -31,6 +41,8 @@ public sealed class BooksUseCases : IUseCase,
     {
         if (input is null)
         {
+            _logger.LogWarning("Invalid input to handle.");
+
             return new Result<CalculateBestPriceOutput>(new ArgumentNullException(nameof(input)));
         }
 
@@ -44,6 +56,10 @@ public sealed class BooksUseCases : IUseCase,
 
         try
         {
+            _logger.LogInformation("Obtaining information from database for {currency} and a quantity of {quantity}..",
+                                   input.BaseCurrency,
+                                   input.Quantity);
+
             // get book from database w/ queryable linq
             var data = (from ob in await _repository.GetAsQueryableAsync<OrderBook>()
                         where ob.Symbol == output.Symbol
@@ -51,6 +67,8 @@ public sealed class BooksUseCases : IUseCase,
 
             if (!data.Any())
             {
+                _logger.LogWarning("No information was found.");
+
                 // return exception as result
                 return new Result<CalculateBestPriceOutput>(
                     new InvalidOperationException($"Order book not found for {input.Side.ToString().ToLower()} in {output.Symbol}."));
@@ -62,6 +80,8 @@ public sealed class BooksUseCases : IUseCase,
 
             if (input.Side == OrderSide.Ask) // buy
             {
+                _logger.LogInformation("Processing ASK information..");
+
                 var collection = output.OrdersBook = ProcessAsks();
 
                 output.ServedQuantity = collection?.Sum(_ => _.Amount) ?? 0;
@@ -69,6 +89,8 @@ public sealed class BooksUseCases : IUseCase,
             }
             else // sell
             {
+                _logger.LogInformation("Processing BID information..");
+
                 var collection = output.OrdersBook = ProcessBids();
 
                 output.ServedQuantity = collection?.Sum(_ => _.Amount) ?? 0;
@@ -96,6 +118,8 @@ public sealed class BooksUseCases : IUseCase,
         }
         catch (Exception ex)
         {
+            _logger.LogError(ex, "{message}", ex.Message);
+
             return new Result<CalculateBestPriceOutput>(ex);
         }
     }
