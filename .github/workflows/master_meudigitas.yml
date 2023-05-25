@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'MeuDigitas'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_29AE4815133A4245BF17FA6579BC88BE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
           package: .
