@@ -1,11 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1705.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digitas.Core", "Digitas.Core\Digitas.Core.csproj", "{B1AD4B6A-BABD-463E-82BB-B549A6CB2133}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MarketData", "MarketData", "{FEE1EF0C-7653-4740-B298-22A21941AB21}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digitas.Api.Console", "Digitas.Api.Console\Digitas.Api.Console.csproj", "{D9E74536-DAE3-414C-ADB6-E5C3FA079A79}"
 EndProject
@@ -25,9 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7B0576B5-CB1B-492D-9545-1CA1C637D793}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "Digitas.UnitTests", "..\Digitas.UnitTests\Digitas.UnitTests.csproj", "{0A9942BA-C04E-481E-832C-3C1209A26846}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digitas.UnitTests", "Digitas.UnitTests\Digitas.UnitTests.csproj", "{2CC0DBE2-03BA-4D8C-99B0-F48E69C7980F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digitas.UnitTests", "Digitas.UnitTests\Digitas.UnitTests.csproj", "{7F121D7F-F40D-49E2-ADCB-810A622D7BB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,14 +47,10 @@ Global
 		{FD99FE6F-5BD6-4337-875C-42F93A80A898}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD99FE6F-5BD6-4337-875C-42F93A80A898}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD99FE6F-5BD6-4337-875C-42F93A80A898}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0A9942BA-C04E-481E-832C-3C1209A26846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A9942BA-C04E-481E-832C-3C1209A26846}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A9942BA-C04E-481E-832C-3C1209A26846}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A9942BA-C04E-481E-832C-3C1209A26846}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2CC0DBE2-03BA-4D8C-99B0-F48E69C7980F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2CC0DBE2-03BA-4D8C-99B0-F48E69C7980F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2CC0DBE2-03BA-4D8C-99B0-F48E69C7980F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2CC0DBE2-03BA-4D8C-99B0-F48E69C7980F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F121D7F-F40D-49E2-ADCB-810A622D7BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F121D7F-F40D-49E2-ADCB-810A622D7BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F121D7F-F40D-49E2-ADCB-810A622D7BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F121D7F-F40D-49E2-ADCB-810A622D7BB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,7 +61,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D9E74536-DAE3-414C-ADB6-E5C3FA079A79} = {E63759F7-D5C6-41AB-BEE8-CEC259D1A244}
 		{32E8CF24-D0BC-4051-91A1-F3AEE618F96D} = {E63759F7-D5C6-41AB-BEE8-CEC259D1A244}
-		{0A9942BA-C04E-481E-832C-3C1209A26846} = {7B0576B5-CB1B-492D-9545-1CA1C637D793}
-		{2CC0DBE2-03BA-4D8C-99B0-F48E69C7980F} = {7B0576B5-CB1B-492D-9545-1CA1C637D793}
+		{7F121D7F-F40D-49E2-ADCB-810A622D7BB2} = {7B0576B5-CB1B-492D-9545-1CA1C637D793}
 	EndGlobalSection
 EndGlobal

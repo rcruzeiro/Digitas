@@ -24,12 +24,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Digitas\Digitas.Core\Digitas.Core.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <None Remove="UseCases\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UseCasesTests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Digitas.Core\Digitas.Core.csproj" />
   </ItemGroup>
 </Project>
